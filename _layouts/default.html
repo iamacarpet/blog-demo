@@ -1,51 +1,701 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<html lang="en-GB">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-    {% include meta.html %}
+<meta name="theme-color" content="#0896d5">
+<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+{% include meta.html %}
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+<link rel="icon" type="image/png" alt="Buymobiles.net" href="https://www.buymobiles.net/themes/buy_mobiles/img/icons/favicon.ico" />
+<link rel="apple-touch-icon" href="https://www.buymobiles.net/themes/buy_mobiles/img/apple-touch-icon.png" />
+<link rel="canonical" href="https://www.buymobiles.net/offers" />
+<script type="text/javascript" src="https://www.buymobiles.net/assets/js/jquery.min.js?1583831185"></script>
+<script type="text/javascript" src="https://www.buymobiles.net/assets/js/bootstrap.min.js?1583831175"></script>
+<link type="text/css" rel="stylesheet" href="https://www.buymobiles.net/assets/css/bootstrap.min.css?1583831177" />
+<link type="text/css" rel="stylesheet" href="https://www.buymobiles.net/assets/css/font-awesome.min.css?1583831182" />
+<link type="text/css" rel="stylesheet" href="https://www.buymobiles.net/assets/css/star-rating.min.css?1583831179" />
+<link type="text/css" rel="stylesheet" href="https://www.buymobiles.net/assets/css/webslidemenu.min.css?1583831174" />
+<link type="text/css" rel="stylesheet" href="https://www.buymobiles.net/assets/css/demo.min.css?1583831183" />
+<link type="text/css" rel="stylesheet" href="https://www.buymobiles.net/assets/css/jquery.fancybox-updated.min.css?1583831179" />
+<link type="text/css" rel="stylesheet" href="https://www.buymobiles.net/themes/buy_mobiles/css/styles.css?1583831177" />
+<link type="text/css" rel="stylesheet" href="https://www.buymobiles.net/themes/buy_mobiles/css/landing.css?1583831174" />
+<style>.async-hide { opacity: 0 !important} </style>
+</head>
+<body class="inner home">
+<input type="hidden" value="1" name="tradein_emc" />
+<header>
+<div class="alert alert-warning ie hide">
+<div class="container">
+<p><strong>Sorry, your browser is a little out of date and this website won't function correctly.</strong><br> Please use another or call us on <a style="color: #8a6d5f; font-weight: 600;" href="tel:0345 413 6269">0345 413 6269</a> to place an order.</p>
+</div>
+</div>
+<div class="cookie-banner">
+<div class="container">
+<div class="row">
+<div class="hidden-xs col-sm-1">
+<i class="fal fa-cookie-bite fa-2x"></i>
+</div>
+<div class="col-xs-12 col-sm-9">
+<p>Our website uses <a href="https://www.buymobiles.net/help/terms/cookie-policy">cookies</a> to provide you with the best possible online shopping experience. Continue to use the site as
+normal if you're happy with this, or find out more about our <a href="https://www.buymobiles.net/help/terms/cookie-policy">cookie policy</a>.</p>
+</div>
+<div class="col-xs-12 col-sm-2">
+<div class="btn white-btn" id="cookie-close-btn">Mmm, cookies</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	// If the cookie exists hide the .cookie-banner...
+	if (document.cookie.indexOf("cookie_accept") >= 0) {
+	    document.write("<style>.cookie-banner { display: none; }</style>");
+	}
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+	// Get the date and add 90 days
+	var d = new Date();
+	d.setTime(d.getTime() + (90*24*60*60*1000));
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+	// Set the cookie expiry
+	var expires = "expires="+ d.toUTCString();
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+	// Write the cookie
+	document.cookie = "cookie_accept=1;" + expires + ";path=/";
+</script>
+<div class="bg-inner">
+<div class="container">
+<div class="main-header">
+<div class="row">
+<div class="col-md-4 hidden-sm hidden-xs">
+<div class="logo">
+<a href="https://www.buymobiles.net/"><img src="https://www.buymobiles.net/themes/buy_mobiles/img/buymobilesnet.png" alt="Buymobiles.net" class="img-responsive" /></a>
+</div>
+</div>
+<div class="col-lg-5 col-md-4 desktop" style="margin-top: -10px;">
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+<div class="trustpilot-widget" data-locale="en-GB" data-template-id="5419b6ffb0d04a076446a9af" data-businessunit-id="4c55090e00006400050d79f4" data-style-height="20px" data-style-width="100%" data-theme="light">
+<a href="https://www.buymobiles.net/about-us" target="_blank">Trustpilot</a>
+</div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+</div>
+<div class="col-lg-3 col-md-4 hidden-sm hidden-xs">
+<input name="lines_open" type="hidden" value="32400" />
+<input name="lines_close" type="hidden" value="72900" />
+<div class="telephony_info" style="display: none;">
+<span class="header-contact">Sales Hotline: <a href="tel:0345 413 6269">0345 413 6269</a>
+<p>Lines open until 8:15pm</p></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="main-nav">
+<div id="jetmenu">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
 
-    {% include analytics.html %}
-  </body>
+<div class="wsmobileheader clearfix">
+<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+<span class="smllogo"><a href="https://www.buymobiles.net/"><img src="https://www.buymobiles.net/themes/buy_mobiles/img/buymobilesnet.png" width="160" alt="Logo" /></a></span>
+<li class="wscarticon clearfix">
+<a href="https://www.buymobiles.net/basket"><i class="fal fa-shopping-basket fa-lg"></i> <em class="roundpoint"><span class="basket_items">0</span></em><span class="hidetxt"></span></a>
+</li>
+</div>
+
+<div class="topbarbg clearfix">
+<nav class="wsmenu clearfix">
+<ul class="wsmenu-list">
+<li class="hidden-lg hidden-md">
+<a href="https://www.buymobiles.net/">
+<img src="https://www.buymobiles.net/themes/buy_mobiles/img/buymobilesnet.png" width="120" alt="Logo" />
+</a>
+</li>
+<li><a onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Mobile Phones Meganav', 'eventAction' : 'Clicks', 'eventLabel' : 'Mobile Phones Meganav' });"> Mobile Phones <i class="wsmenu-arrow fa fa-angle-down"></i></a>
+<div class="wsmegamenu clearfix">
+<div class="container-fluid">
+<div class="row">
+<ul class="col-lg-3 col-md-3 col-xs-12 link-list">
+<li class="title">iPhone</li>
+<li><a href="https://www.buymobiles.net/apple/iphone-11-64gb-black">iPhone 11 </a></li>
+<li><a href="https://www.buymobiles.net/apple/iphone-11-pro-64gb-space-grey">iPhone 11 Pro </a></li>
+<li><a href="https://www.buymobiles.net/apple/iphone-11-pro-max-64gb-space-grey">iPhone 11 Pro Max </a></li>
+<li><a href="https://www.buymobiles.net/apple/iphone-xr-64gb-black">iPhone X<span style="font-variant-caps: small-caps;">r</span></a></li>
+<li><a href="https://www.buymobiles.net/apple/iphone-xs-64gb-space-grey">iPhone X<span style="font-variant-caps: small-caps;">s</span></a></li>
+<li><a href="https://www.buymobiles.net/apple/iphone-xs-max-64gb-silver">iPhone X<span style="font-variant-caps: small-caps;">s</span> Max</a></li>
+<li><a href="https://www.buymobiles.net/apple/iphone-8-64gb-space-grey">iPhone 8</a></li>
+<li><a href="https://www.buymobiles.net/apple/iphone-8-plus-64gb-space-grey">iPhone 8 Plus</a></li>
+<li><a href="https://www.buymobiles.net/apple/iphone-7-32gb-black">iPhone 7</a></li>
+<li class="more"><a href="https://www.buymobiles.net/apple">View All <i class="fal fa-chevron-right" style="font-size: 0.7em; margin-left: 3px;"></i></a></li>
+</ul>
+<ul class="col-lg-3 col-md-3 col-xs-12 link-list">
+<li class="title">Top Mobile Phones</li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-s20-cosmic-grey">Samsung Galaxy S20 <span class="wstmenutag orangetag">New</span></a></li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-s20-5g-cosmic-grey">Samsung Galaxy S20 5G<span class="wstmenutag orangetag">New</span></a></li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-s20-plus-5g-cosmic-black">Samsung Galaxy S20 Plus 5G <span class="wstmenutag orangetag">New</span></a></li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-s20-ultra-5g-128gb-cosmic-black">Samsung Galaxy S20 Ultra 5G <span class="wstmenutag orangetag">New</span></a></li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-s10-128gb-black">Samsung Galaxy S10</a></li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-s10-plus-128gb-black">Samsung Galaxy S10 Plus</a></li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-note-10-aura-black">Samsung Galaxy Note 10</a></li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-a20e-black">Samsung Galaxy A20e</a></li>
+<li><a href="https://www.buymobiles.net/huawei/p30-black">Huawei P30</a></li>
+<li><a href="https://www.buymobiles.net/huawei/p30-pro-128gb-black">Huawei P30 Pro</a></li>
+<li class="more"><a href="https://www.buymobiles.net/contract-mobile-phones">View All <i class="fal fa-chevron-right" style="font-size: 0.7em; margin-left: 3px;"></i></a></li>
+</ul>
+<ul class="col-lg-2 col-md-3 col-xs-12 link-list">
+<a href="https://www.buymobiles.net/network"><li class="title">Networks</li></a>
+<li class="network-ee"><a href="https://www.buymobiles.net/ee">EE Deals</a></li>
+<li class="network-o2"><a href="https://www.buymobiles.net/o2">O2 Deals</a></li>
+<li class="network-three"><a href="https://www.buymobiles.net/three">Three Deals</a></li>
+<li class="network-vodafone"><a href="https://www.buymobiles.net/vodafone">Vodafone Deals</a></li>
+<li class="title-no-link"><br></li>
+<li class="title">Discover 5G</li>
+<li class="manufact-apple"><a href="https://www.buymobiles.net/5g-phone-deals/ee">5G on EE</a></li>
+<li class="manufact-apple"><a href="https://www.buymobiles.net/5g-phone-deals/o2">5G on O2</a></li>
+<li class="manufact-apple"><a href="https://www.buymobiles.net/5g-phone-deals/vodafone">5G on Vodafone</a></li>
+<li class="more"><a href="https://www.buymobiles.net/5g-phone-deals">View All <i class="fal fa-chevron-right" style="font-size: 0.7em; margin-left: 3px;"></i></a></li>
+</ul>
+<ul class="col-lg-2 col-md-3 col-xs-12 link-list">
+<a href="https://www.buymobiles.net/manufacturer"><li class="title">Manufacturers</li></a>
+<li class="manufact-apple"><a href="https://www.buymobiles.net/apple">Apple</a></li>
+<li class="manufact-samsung"><a href="https://www.buymobiles.net/samsung">Samsung</a></li>
+<li class="manufact-ms"><a href="https://www.buymobiles.net/huawei">Huawei</a></li>
+<li class="more"><a href="https://www.buymobiles.net/manufacturer">View All <i class="fal fa-chevron-right" style="font-size: 0.7em; margin-left: 3px;"></i></a></li>
+<li class="title-no-link"><br></li>
+<li class="title">Phones &amp; SIMs</li>
+<li><a href="https://www.buymobiles.net/contract-mobile-phones">Pay Monthly Phones</a></li>
+<li><a href="https://www.buymobiles.net/sim-free">SIM Free Phones</a></li>
+<li><a href="https://www.buymobiles.net/mobile-phone-finance">Phones on Finance</a></li>
+<li><a href="https://www.buymobiles.net/sim-only">SIM Only</a></li>
+<li><a href="https://www.buymobiles.net/business-deals">Business Mobile Phones</a></li>
+</ul>
+<ul class="col-lg-2 hidden-md col-xs-12 link-list">
+<li class="title">More <i class="fal fa-chevron-right" style="font-size: 0.7em; margin-left: 3px;"></i></li>
+<li><a href="https://www.buymobiles.net/contract-tablets">Contract Tablets</a></li>
+<li><a href="https://www.buymobiles.net/data-only-sim-deals">Data/Tablet SIMs</a></li>
+<li><a href="https://www.buymobiles.net/mobile-wifi">Mobile WiFi</a></li>
+<li><a href="https://www.buymobiles.net/coming-soon">Coming Soon &amp; Just Out</a></li>
+<li><a href="https://www.buymobiles.net/ee-broadband">EE Home Broadband</a></li>
+<li><a href="https://www.buymobiles.net/accessories">Accessories</a></li>
+<li><a href="https://www.buymobiles.net/about-us">About Us</a></li>
+<li class="title-no-link"><br></li>
+<li class="title">Handset Only</li>
+<li><a href="https://www.buymobiles.net/sim-free">Pay Upfront</a></li>
+<li><a href="https://www.buymobiles.net/mobile-phone-finance">Pay on Finance</a></li>
+</ul>
+</div>
+</div>
+<a onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Meganav Banner', 'eventAction' : 'Clicks', 'eventLabel' : 'Meganav Banner' });" href="https://www.buymobiles.net/apple/iphone-11-64gb-black" class="desktop">
+<img src="https://www.buymobiles.net/assets/img/ip11-meganav.jpg" alt="iPhone 11 - Buymobiles.net" />
+</a>
+</div>
+</li>
+<li aria-haspopup="true"><a onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Sim Only Meganav', 'eventAction' : 'Clicks', 'eventLabel' : 'Sim Only Meganav' });"></i>SIM Only <i class="wsmenu-arrow fa fa-angle-down"></i></a>
+<ul class="sub-menu">
+<li><a href="https://www.buymobiles.net/sim-only">SIM Only Deals</a></li>
+<li><a href="https://www.buymobiles.net/sim-only-special-offers">Special Offers</a></li>
+<li><a href="https://www.buymobiles.net/data-only-sim-deals">Data &amp; Tablet SIMs</a></li>
+<li><a href="https://www.buymobiles.net/ee-flex-plans">EE Flex Plans</a></li>
+</ul>
+</li>
+<li><a onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Mobile Phones Meganav', 'eventAction' : 'Clicks', 'eventLabel' : 'Mobile Phones Upgrades Meganav' });"> Upgrades <i class="wsmenu-arrow fa fa-angle-down"></i></a>
+<div class="wsmegamenu clearfix">
+<div class="container-fluid">
+<div class="row">
+<ul class="col-lg-2 col-md-3 col-xs-12 link-list">
+<li class="title">iPhone Upgrades</li>
+<li><a href="https://www.buymobiles.net/apple/iphone-11-64gb-black?upgrades=1">iPhone 11</a></li>
+<li><a href="https://www.buymobiles.net/apple/iphone-11-pro-64gb-space-grey?upgrades=1">iPhone 11 Pro</a></li>
+<li><a href="https://www.buymobiles.net/apple/iphone-11-pro-max-64gb-space-grey?upgrades=1">iPhone 11 Pro Max</a></li>
+<li><a href="https://www.buymobiles.net/apple/iphone-xr-64gb-black?upgrades=1">iPhone X<span style="font-variant-caps: small-caps;">r</span></a></li>
+<li><a href="https://www.buymobiles.net/apple/iphone-xs-64gb-space-grey?upgrades=1">iPhone X<span style="font-variant-caps: small-caps;">s</span></a></li>
+<li><a href="https://www.buymobiles.net/apple/iphone-xs-max-64gb-silver?upgrades=1">iPhone X<span style="font-variant-caps: small-caps;">s</span> Max</a></li>
+<li><a href="https://www.buymobiles.net/apple/iphone-8-64gb-gold?upgrades=1">iPhone 8</a></li>
+<li><a href="https://www.buymobiles.net/apple/iphone-8-plus-64gb-space-grey?upgrades=1">iPhone 8 Plus</a></li>
+<li><a href="https://www.buymobiles.net/apple/iphone-7-32gb-black?upgrades=1">iPhone 7</a></li>
+<li class="more"><a href="https://www.buymobiles.net/apple?upgrades=1">View All <i class="fal fa-chevron-right" style="font-size: 0.7em; margin-left: 3px;"></i></a></li>
+</ul>
+<ul class="col-lg-3 col-md-3 col-xs-12 link-list">
+<li class="title">Popluar Upgrades</li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-s20-cosmic-grey?upgrades=1">Samsung Galaxy S20 <span class="wstmenutag orangetag">New</span></a></li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-s20-5g-cosmic-grey?upgrades=1">Samsung Galaxy S20 5G<span class="wstmenutag orangetag">New</span></a></li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-s20-plus-5g-cosmic-black?upgrades=1">Samsung Galaxy S20 Plus 5G <span class="wstmenutag orangetag">New</span></a></li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-s20-ultra-5g-128gb-cosmic-black?upgrades=1">Samsung Galaxy S20 Ultra 5G <span class="wstmenutag orangetag">New</span></a></li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-s10-128gb-black?upgrades=1">Samsung Galaxy S10</a></li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-s10-plus-128gb-black?upgrades=1">Samsung Galaxy S10 Plus</a></li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-note-10-aura-black?upgrades=1">Samsung Galaxy Note 10</a></li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-a20e-black?upgrades=1">Samsung Galaxy A20e</a></li>
+<li><a href="https://www.buymobiles.net/huawei/p30-black?upgrades=1">Huawei P30</a></li>
+<li><a href="https://www.buymobiles.net/huawei/p30-pro-128gb-black?upgrades=1">Huawei P30 Pro</a></li>
+</ul>
+<ul class="col-lg-3 col-md-3 col-xs-12 link-list">
+<li class="title">Popular Android Upgrades</li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-s10e-black?upgrades=1">Samsung Galaxy S10e</a></li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-note-10-plus-aura-black?upgrades=1">Samsung Galaxy Note 10 Plus</a></li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-note-10-plus-5g-256gb-aura-black?upgrades=1">Samsung Galaxy Note 10 Plus 5G</a></li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-a51-black?upgrades=1">Samsung Galaxy A51</a></li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-a40-black?upgrades=1">Samsung Galaxy A40</a></li>
+<li><a href="https://www.buymobiles.net/samsung/galaxy-a10-black?upgrades=1">Samsung Galaxy A10</a></li>
+<li><a href="https://www.buymobiles.net/huawei/p30-lite-black?upgrades=1">Huawei P30 Lite</a></li>
+<li><a href="https://www.buymobiles.net/huawei/p-smart-2019-black?upgrades=1">Huawei P smart 2019</a></li>
+<li><a href="https://www.buymobiles.net/huawei/p20-pro-twilight?upgrades=1">Huawei P20 Pro</a></li>
+</ul>
+<ul class="col-lg-2 col-md-3 col-xs-12 link-list">
+<li class="title">Manufacturers</li>
+<li class="manufact-apple"><a href="https://www.buymobiles.net/apple?upgrades=1">Apple</a></li>
+<li class="manufact-samsung"><a href="https://www.buymobiles.net/samsung?upgrades=1">Samsung</a></li>
+<li class="manufact-sony"><a href="https://www.buymobiles.net/sony?upgrades=1">Sony</a></li>
+<li class="manufact-ms"><a href="https://www.buymobiles.net/huawei?upgrades=1">Huawei</a></li>
+<li class="manufact-nokia"><a href="https://www.buymobiles.net/nokia?upgrades=1">Nokia</a></li>
+<li class="manufact-lg"><a href="https://www.buymobiles.net/lg?upgrades=1">LG</a></li>
+<li class="more"><a href="https://www.buymobiles.net/contract-mobile-phones?upgrades=1">View All <i class="fal fa-chevron-right" style="font-size: 0.7em; margin-left: 3px;"></i></a></li>
+</ul>
+<ul class="col-lg-2 hidden-md col-xs-12 link-list">
+<li class="title">Upgrades</li>
+<li><a href="https://www.buymobiles.net/upgrade-offers">Upgrade Offers</a></li>
+<li><a href="https://www.buymobiles.net/upgrade">Eligibility Checker</a></li>
+<li><a href="https://www.buymobiles.net/help/upgrading">Upgrade FAQ</a></li>
+</ul>
+</div>
+</div>
+ <a onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Meganav Banner', 'eventAction' : 'Clicks', 'eventLabel' : 'Meganav Upgrades Banner' });" href="https://www.buymobiles.net/upgrade-offers" class="desktop">
+<img src="https://www.buymobiles.net/assets/img/upgrades.jpg" alt="Upgrades - Buymobiles.net" />
+</a>
+</div>
+</li>
+<li><a onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Special Offers Meganav', 'eventAction' : 'Clicks', 'eventLabel' : 'Special Offers Meganav' });" href="https://www.buymobiles.net/offers">Offers</a></li>
+<li><a onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Final Reductions Meganav', 'eventAction' : 'Clicks', 'eventLabel' : 'Final Reductions Meganav' });" href="https://www.buymobiles.net/mobile-phone-final-reductions">Reductions</a></li>
+<li class="custom"><a onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Refurbished Meganav', 'eventAction' : 'Clicks', 'eventLabel' : 'Refurbished Meganav' });" href="https://www.buymobiles.net/refurbished-mobile-phones">Refurbished <span class="wstmenutag orangetag" style="font-size: 12px; background-color: #0bb068;">New</span></a></li>
+<li class="hidden-sm hidden-xs"><a href="https://www.buymobiles.net/help" onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Help Meganav', 'eventAction' : 'Clicks', 'eventLabel' : 'Help Meganav' });">Help</a></li>
+<li class="searchlandscapetablet">
+<div class="semantic-search">
+<fieldset class="search-bg">
+<nobr>
+<input type="text" id="search" autocomplete="off" placeholder="Search Phone By Name..."><i class="fal fa-search"></i>
+</nobr>
+<div class="dropdown-menu" id="search-results" style="display:none;">
+<ul>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Alcatel 1X 2019' });;" data-search="alcatel 1x 2019" data-name="Alcatel 1X 2019" data-url="https://www.buymobiles.net/alcatel/1x-2019-black">Alcatel 1X 2019</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Alcatel 1' });;" data-search="alcatel 1" data-name="Alcatel 1" data-url="https://www.buymobiles.net/alcatel/1-black">Alcatel 1</li>
+<li data-search="alcatel" data-name="All Alcatel" data-url="https://www.buymobiles.net/alcatel">All Alcatel</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'iPhone Xs 64GB' });;" data-search="apple iphone xs" data-name="Apple iPhone Xs" data-url="https://www.buymobiles.net/apple/iphone-xs-64gb-space-grey">Apple iPhone Xs</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'iPhone XR Refurbished - Very Good 64GB' });;" data-search="apple iphone xr refurbished - very good" data-name="Apple iPhone XR Refurbished - Very Good" data-url="https://www.buymobiles.net/apple/iphone-xr-64gb-black-refurbished-very-good">Apple iPhone XR Refurbished - Very Good</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'iPhone XR 64GB' });;" data-search="apple iphone xr" data-name="Apple iPhone XR" data-url="https://www.buymobiles.net/apple/iphone-xr-64gb-black">Apple iPhone XR</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'iPhone X Refurbished - Very Good 64GB' });;" data-search="apple iphone x refurbished - very good" data-name="Apple iPhone X Refurbished - Very Good" data-url="https://www.buymobiles.net/apple/iphone-x-64gb-space-grey-refurbished-very-good">Apple iPhone X Refurbished - Very Good</li>
+
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'iPhone 8 Refurbished - Very Good 64GB' });;" data-search="apple iphone 8 refurbished - very good" data-name="Apple iPhone 8 Refurbished - Very Good" data-url="https://www.buymobiles.net/apple/iphone-8-64gb-space-grey-refurbished-very-good">Apple iPhone 8 Refurbished - Very Good</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'iPhone 8 Plus 64GB' });;" data-search="apple iphone 8 plus" data-name="Apple iPhone 8 Plus" data-url="https://www.buymobiles.net/apple/iphone-8-plus-64gb-space-grey">Apple iPhone 8 Plus</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'iPhone 8 64GB' });;" data-search="apple iphone 8" data-name="Apple iPhone 8" data-url="https://www.buymobiles.net/apple/iphone-8-64gb-space-grey">Apple iPhone 8</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'iPhone 7 Refurbished - Very Good 32GB' });;" data-search="apple iphone 7 refurbished - very good" data-name="Apple iPhone 7 Refurbished - Very Good" data-url="https://www.buymobiles.net/apple/iphone-7-32gb-black-refurbished-very-good">Apple iPhone 7 Refurbished - Very Good</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'iPhone 7 Plus 32GB' });;" data-search="apple iphone 7 plus" data-name="Apple iPhone 7 Plus" data-url="https://www.buymobiles.net/apple/iphone-7-plus-32gb-black">Apple iPhone 7 Plus</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'iPhone 7 32GB' });;" data-search="apple iphone 7" data-name="Apple iPhone 7" data-url="https://www.buymobiles.net/apple/iphone-7-32gb-black">Apple iPhone 7</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'iPhone 6s Plus 32GB' });;" data-search="apple iphone 6s plus" data-name="Apple iPhone 6s Plus" data-url="https://www.buymobiles.net/apple/iphone-6s-plus-32gb-rose-gold">Apple iPhone 6s Plus</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'iPhone 11 Pro Max 64GB' });;" data-search="apple iphone 11 pro max" data-name="Apple iPhone 11 Pro Max" data-url="https://www.buymobiles.net/apple/iphone-11-pro-max-64gb-space-grey">Apple iPhone 11 Pro Max</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'iPhone 11 Pro 64GB' });;" data-search="apple iphone 11 pro" data-name="Apple iPhone 11 Pro" data-url="https://www.buymobiles.net/apple/iphone-11-pro-64gb-space-grey">Apple iPhone 11 Pro</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'iPhone 11 64GB' });;" data-search="apple iphone 11" data-name="Apple iPhone 11" data-url="https://www.buymobiles.net/apple/iphone-11-64gb-black">Apple iPhone 11</li>
+<li data-search="appleiphone" data-name="All Apple iPhone" data-url="https://www.buymobiles.net/apple">All Apple iPhone</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'CAT S61' });;" data-search="cat s61" data-name="CAT S61" data-url="https://www.buymobiles.net/cat/s61-black">CAT S61</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'CAT S41' });;" data-search="cat s41" data-name="CAT S41" data-url="https://www.buymobiles.net/cat/s41-black">CAT S41</li>
+<li data-search="cat" data-name="All CAT" data-url="https://www.buymobiles.net/cat">All CAT</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Doro 6520' });;" data-search="doro 6520" data-name="Doro 6520" data-url="https://www.buymobiles.net/doro/6520-graphite">Doro 6520</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Doro 6030' });;" data-search="doro 6030" data-name="Doro 6030" data-url="https://www.buymobiles.net/doro/6030-graphite">Doro 6030</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Doro 5516' });;" data-search="doro 5516" data-name="Doro 5516" data-url="https://www.buymobiles.net/doro/5516-graphite">Doro 5516</li>
+<li data-search="doro" data-name="All Doro" data-url="https://www.buymobiles.net/doro">All Doro</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Energizer Energy 100' });;" data-search="energizer energy 100" data-name="Energizer Energy 100" data-url="https://www.buymobiles.net/energizer/energy-100-black">Energizer Energy 100</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Energizer E20' });;" data-search="energizer e20" data-name="Energizer E20" data-url="https://www.buymobiles.net/energizer/e20-black">Energizer E20</li>
+<li data-search="energizer" data-name="All Energizer" data-url="">All Energizer</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Google Pixel 4 XL 64GB' });;" data-search="google pixel 4 xl" data-name="Google Pixel 4 XL" data-url="https://www.buymobiles.net/google/pixel-4-xl-64gb-black">Google Pixel 4 XL</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Google Pixel 4 64GB' });;" data-search="google pixel 4" data-name="Google Pixel 4" data-url="https://www.buymobiles.net/google/pixel-4-64gb-black">Google Pixel 4</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Google Pixel 3a XL' });;" data-search="google pixel 3a xl" data-name="Google Pixel 3a XL" data-url="https://www.buymobiles.net/google/pixel-3a-xl-black">Google Pixel 3a XL</li>
+<li data-search="google" data-name="All Google" data-url="https://www.buymobiles.net/google">All Google</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Honor 8S' });;" data-search="honor 8s" data-name="Honor 8S" data-url="https://www.buymobiles.net/honor/8s-black">Honor 8S</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Honor 20 Pro' });;" data-search="honor 20 pro" data-name="Honor 20 Pro" data-url="https://www.buymobiles.net/honor/20-pro-black">Honor 20 Pro</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Honor 20 Lite' });;" data-search="honor 20 lite" data-name="Honor 20 Lite" data-url="https://www.buymobiles.net/honor/20-lite-blue">Honor 20 Lite</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Honor 20' });;" data-search="honor 20" data-name="Honor 20" data-url="https://www.buymobiles.net/honor/20-black">Honor 20</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Honor 10 Lite' });;" data-search="honor 10 lite" data-name="Honor 10 Lite" data-url="https://www.buymobiles.net/honor/10-lite-black">Honor 10 Lite</li>
+<li data-search="honor" data-name="All Honor" data-url="https://www.buymobiles.net/honor">All Honor</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Huawei Y7 (2019)' });;" data-search="huawei y7 (2019)" data-name="Huawei Y7 (2019)" data-url="https://www.buymobiles.net/huawei/y7-2019-black">Huawei Y7 (2019)</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Huawei Y6 2019' });;" data-search="huawei y6 2019" data-name="Huawei Y6 2019" data-url="https://www.buymobiles.net/huawei/y6-2019-black">Huawei Y6 2019</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Huawei P30 Pro 128GB' });;" data-search="huawei p30 pro" data-name="Huawei P30 Pro" data-url="https://www.buymobiles.net/huawei/p30-pro-128gb-black">Huawei P30 Pro</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Huawei P30 Lite' });;" data-search="huawei p30 lite" data-name="Huawei P30 Lite" data-url="https://www.buymobiles.net/huawei/p30-lite-black">Huawei P30 Lite</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Huawei P30' });;" data-search="huawei p30" data-name="Huawei P30" data-url="https://www.buymobiles.net/huawei/p30-black">Huawei P30</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Huawei P20 Pro' });;" data-search="huawei p20 pro" data-name="Huawei P20 Pro" data-url="https://www.buymobiles.net/huawei/p20-pro-black">Huawei P20 Pro</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Huawei P smart 2019' });;" data-search="huawei p smart 2019" data-name="Huawei P smart 2019" data-url="https://www.buymobiles.net/huawei/p-smart-2019-black">Huawei P smart 2019</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Huawei Nova 5T' });;" data-search="huawei nova 5t" data-name="Huawei Nova 5T" data-url="https://www.buymobiles.net/huawei/nova-5t-black">Huawei Nova 5T</li>
+<li data-search="huawei" data-name="All Huawei" data-url="https://www.buymobiles.net/huawei">All Huawei</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'LG V50 ThinQ 5G' });;" data-search="lg v50 thinq 5g" data-name="LG V50 ThinQ 5G" data-url="https://www.buymobiles.net/lg/v50-thinq-5g-black">LG V50 ThinQ 5G</li>
+<li data-search="lg" data-name="All LG" data-url="https://www.buymobiles.net/lg">All LG</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Nokia 2.2' });;" data-search="nokia 2.2" data-name="Nokia 2.2" data-url="https://www.buymobiles.net/nokia/22-black">Nokia 2.2</li>
+<li data-search="nokia" data-name="All Nokia" data-url="https://www.buymobiles.net/nokia">All Nokia</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'OnePlus 7 Pro 5G' });;" data-search="oneplus 7 pro 5g" data-name="OnePlus 7 Pro 5G" data-url="https://www.buymobiles.net/oneplus/7-pro-5g-blue">OnePlus 7 Pro 5G</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'OnePlus 6T 8GB RAM 128GB' });;" data-search="oneplus 6t 8gb ram" data-name="OnePlus 6T 8GB RAM" data-url="https://www.buymobiles.net/oneplus/6t-8gb-ram-128gb-mirror-black">OnePlus 6T 8GB RAM</li>
+<li data-search="oneplus" data-name="All OnePlus" data-url="https://www.buymobiles.net/oneplus">All OnePlus</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Oppo Reno 5G' });;" data-search="oppo reno 5g" data-name="Oppo Reno 5G" data-url="https://www.buymobiles.net/oppo/reno-5g-green">Oppo Reno 5G</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Oppo RX17 Neo' });;" data-search="oppo rx17 neo" data-name="Oppo RX17 Neo" data-url="https://www.buymobiles.net/oppo/rx17-neo-blue">Oppo RX17 Neo</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Oppo Find X' });;" data-search="oppo find x" data-name="Oppo Find X" data-url="https://www.buymobiles.net/oppo/find-x-blue">Oppo Find X</li>
+<li data-search="oppo" data-name="All Oppo" data-url="https://www.buymobiles.net/oppo">All Oppo</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy S9' });;" data-search="samsung galaxy s9" data-name="Samsung Galaxy S9" data-url="https://www.buymobiles.net/samsung/galaxy-s9-black">Samsung Galaxy S9</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy S7' });;" data-search="samsung galaxy s7" data-name="Samsung Galaxy S7" data-url="https://www.buymobiles.net/samsung/galaxy-s7-pink-gold">Samsung Galaxy S7</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy S20 Ultra 5G 128GB' });;" data-search="samsung galaxy s20 ultra 5g" data-name="Samsung Galaxy S20 Ultra 5G" data-url="https://www.buymobiles.net/samsung/galaxy-s20-ultra-5g-128gb-cosmic-black">Samsung Galaxy S20 Ultra 5G</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy S20 Plus 5G' });;" data-search="samsung galaxy s20 plus 5g" data-name="Samsung Galaxy S20 Plus 5G" data-url="https://www.buymobiles.net/samsung/galaxy-s20-plus-5g-cosmic-black">Samsung Galaxy S20 Plus 5G</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy S20 5G' });;" data-search="samsung galaxy s20 5g" data-name="Samsung Galaxy S20 5G" data-url="https://www.buymobiles.net/samsung/galaxy-s20-5g-cosmic-grey">Samsung Galaxy S20 5G</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy S20' });;" data-search="samsung galaxy s20" data-name="Samsung Galaxy S20" data-url="https://www.buymobiles.net/samsung/galaxy-s20-cosmic-grey">Samsung Galaxy S20</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy S10e 128GB' });;" data-search="samsung galaxy s10e" data-name="Samsung Galaxy S10e" data-url="https://www.buymobiles.net/samsung/galaxy-s10e-black">Samsung Galaxy S10e</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy S10 Refurbished - Pristine' });;" data-search="samsung galaxy s10 refurbished - pristine" data-name="Samsung Galaxy S10 Refurbished - Pristine" data-url="https://www.buymobiles.net/samsung/galaxy-s10-128gb-black-refurbished-pristine">Samsung Galaxy S10 Refurbished - Pristine</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy S10 Plus 128GB' });;" data-search="samsung galaxy s10 plus" data-name="Samsung Galaxy S10 Plus" data-url="https://www.buymobiles.net/samsung/galaxy-s10-plus-128gb-black">Samsung Galaxy S10 Plus</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy S10 Lite' });;" data-search="samsung galaxy s10 lite" data-name="Samsung Galaxy S10 Lite" data-url="https://www.buymobiles.net/samsung/galaxy-s10-lite-black">Samsung Galaxy S10 Lite</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy S10 5G 256GB' });;" data-search="samsung galaxy s10 5g" data-name="Samsung Galaxy S10 5G" data-url="https://www.buymobiles.net/samsung/galaxy-s10-5g-256gb-black">Samsung Galaxy S10 5G</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy S10 128GB' });;" data-search="samsung galaxy s10" data-name="Samsung Galaxy S10" data-url="https://www.buymobiles.net/samsung/galaxy-s10-128gb-black">Samsung Galaxy S10</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy Note 10 Plus 5G 256GB' });;" data-search="samsung galaxy note 10 plus 5g" data-name="Samsung Galaxy Note 10 Plus 5G" data-url="https://www.buymobiles.net/samsung/galaxy-note-10-plus-5g-256gb-aura-black">Samsung Galaxy Note 10 Plus 5G</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy Note 10 Plus' });;" data-search="samsung galaxy note 10 plus" data-name="Samsung Galaxy Note 10 Plus" data-url="https://www.buymobiles.net/samsung/galaxy-note-10-plus-aura-black">Samsung Galaxy Note 10 Plus</li>
+ <li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy Note 10 Lite' });;" data-search="samsung galaxy note 10 lite" data-name="Samsung Galaxy Note 10 Lite" data-url="https://www.buymobiles.net/samsung/galaxy-note-10-lite-aura-black">Samsung Galaxy Note 10 Lite</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy Note 10' });;" data-search="samsung galaxy note 10" data-name="Samsung Galaxy Note 10" data-url="https://www.buymobiles.net/samsung/galaxy-note-10-aura-black">Samsung Galaxy Note 10</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy A80' });;" data-search="samsung galaxy a80" data-name="Samsung Galaxy A80" data-url="https://www.buymobiles.net/samsung/galaxy-a80-black">Samsung Galaxy A80</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy A71' });;" data-search="samsung galaxy a71" data-name="Samsung Galaxy A71" data-url="https://www.buymobiles.net/samsung/galaxy-a71-black">Samsung Galaxy A71</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy A51' });;" data-search="samsung galaxy a51" data-name="Samsung Galaxy A51" data-url="https://www.buymobiles.net/samsung/galaxy-a51-black">Samsung Galaxy A51</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy A40' });;" data-search="samsung galaxy a40" data-name="Samsung Galaxy A40" data-url="https://www.buymobiles.net/samsung/galaxy-a40-black">Samsung Galaxy A40</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy A20e' });;" data-search="samsung galaxy a20e" data-name="Samsung Galaxy A20e" data-url="https://www.buymobiles.net/samsung/galaxy-a20e-black">Samsung Galaxy A20e</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Samsung Galaxy A10' });;" data-search="samsung galaxy a10" data-name="Samsung Galaxy A10" data-url="https://www.buymobiles.net/samsung/galaxy-a10-black">Samsung Galaxy A10</li>
+<li data-search="samsung" data-name="All Samsung" data-url="https://www.buymobiles.net/samsung">All Samsung</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Sony Xperia L3' });;" data-search="sony xperia l3" data-name="Sony Xperia L3" data-url="https://www.buymobiles.net/sony/xperia-l3-black">Sony Xperia L3</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Sony Xperia 5' });;" data-search="sony xperia 5" data-name="Sony Xperia 5" data-url="https://www.buymobiles.net/sony/xperia-5-black">Sony Xperia 5</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Sony Xperia 1' });;" data-search="sony xperia 1" data-name="Sony Xperia 1" data-url="https://www.buymobiles.net/sony/xperia-1-black">Sony Xperia 1</li>
+<li data-search="sony" data-name="All Sony" data-url="https://www.buymobiles.net/sony">All Sony</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Xiaomi Pocophone F1 128GB' });;" data-search="xiaomi pocophone f1" data-name="Xiaomi Pocophone F1" data-url="https://www.buymobiles.net/xiaomi/pocophone-f1-128gb-black">Xiaomi Pocophone F1</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Xiaomi Mi Mix 3 5G' });;" data-search="xiaomi mi mix 3 5g" data-name="Xiaomi Mi Mix 3 5G" data-url="https://www.buymobiles.net/xiaomi/mi-mix-3-5g-black">Xiaomi Mi Mix 3 5G</li>
+<li onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Select a Phone', 'eventAction' : 'Clicks', 'eventLabel' : 'Xiaomi Mi 8 Pro 128GB' });;" data-search="xiaomi mi 8 pro" data-name="Xiaomi Mi 8 Pro" data-url="https://www.buymobiles.net/xiaomi/mi-8-pro-128gb-titanium">Xiaomi Mi 8 Pro</li>
+<li data-search="xiaomi" data-name="All Xiaomi" data-url="https://www.buymobiles.net/xiaomi">All Xiaomi</li>
+</ul>
+</div>
+</fieldset>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		// clear the search results if people click away from the menu overlay
+		$('body').click(function() {
+			$('#search-results').hide();
+		});
+		0
+
+		// click event for entering the search field
+		$('#search').click(function(e) {
+			e.stopPropagation(); // prevent triggering the body click function which hides the form
+			$('#search-results').show();
+
+			// if all the elements are hidden hide the menu, this needs to happen after we've shown the menu
+			// otherwise all the elements are hidden. This doesn't cause a display issue
+			if ($('#search-results ul > *').length == $('#search-results ul > *').filter(":hidden").length || $(this).val() == "") {
+				$('#search-results').hide();
+			}
+		});
+
+		// click event for taking the user to the search result page
+		$('#search-results ul li').click(function() {
+
+			// change the search box to show the selected handset
+			$('#search').val($(this).data('name'));
+
+			// go to the url
+			window.location = $(this).data("url");
+		});
+
+		// clear any selected elements on mouseenter so that only only element is ever selected
+		$('#search-results ul li').mouseenter(function() {
+			$('#search-results ul li').removeClass('hovered');
+			$(this).addClass('hovered');
+		});
+
+		// seach key up event, this triggers to begin filtering the list of elements
+		// hiding the ones we don't need
+		$("#search").keyup(function() {
+
+			// get the search term and lowercase it
+			var term = $(this).val();
+			term = term.toLowerCase();
+
+			// do we need to reset the hover states on the menu
+			var reset_hover = false;
+
+			// for each element in the handsets list check if we have found a match
+			$('#search-results ul li').each(function() {
+
+				// get the local vars
+				var search = $(this).data("search");
+				var name = $(this).data("name");
+
+				// if we've found a match
+				if (search.indexOf(term) >= 0) {
+					// show the element
+					$(this).show();
+
+					// regex replace the <li> text so it highlights the search term
+					var regex = new RegExp('(' + term + ')', 'gi');
+					$(this).html(name.replace(regex, "<span class=\"highlighted\">$1</span>"));
+				} else {
+					$(this).hide();
+				}
+
+				// if we find an element that has the hovered class but is hidden we need to reset the hover
+				if ($(this).hasClass('hovered') && $(this).css('display') == "none") {
+					reset_hover = true;
+				}
+
+			});
+
+			// if the term has been reset to "" or none of the visable elements are hovered
+			// then we need to clear any elements that have a 'hovered' class
+			if (term == "" || reset_hover) {
+				$('#search-results ul li').removeClass('hovered');
+			}
+
+			// show the menu
+			$('#search-results').show();
+
+			// if all the elements are hidden hide the menu, this needs to happen after we've shown the menu
+			// otherwise all the elements are hidden. This doesn't cause a display issue
+			if ($('#search-results ul > *').length == $('#search-results ul > *').filter(":hidden").length || term == "") {
+				$('#search-results').hide();
+			}
+		});
+
+	});
+
+	// handler for enter, up and down arrow keys
+	$(document).keyup(function(e) {
+
+		switch (e.which) {
+
+			case 13: // enter key
+				// get the url from the 'hovered' element
+				url = $('#search-results ul li.hovered').data("url");
+
+				// if the variable isn't undefined go to the url
+				if (typeof url != 'undefined') {
+					// change the search box to show the selected handset
+					$('#search').val($('#search-results ul li.hovered').data('name'));
+
+					// hide the search results overlay
+					$('#search-results').hide();
+
+					// go to the url
+					window.location.href = url;
+				} else {
+					var term = $('#search').val();
+
+					if (typeof term == 'undefined' || term !== "") {
+						term = term.toLowerCase();
+						window.location.href = "/search?q="+term;
+					}
+				}
+
+				break;
+
+			case 38: // up arrow key, selects the previously visible element
+
+				// check if there are any styled elements already if not style the first
+				if (!$('#search-results ul li').hasClass('hovered')) {
+					$('#search-results ul li:visible:last').addClass('hovered');
+					return false;
+				}
+
+				var found = false; // variable to store if we've found the matching element
+				var previous; // variable to store the previous element so we cal remove it's styling
+
+				// loop through each element checking if there is already an element that has a hover effect
+				$($('#search-results ul li').get().reverse()).each(function() {
+
+					// if this element is hidden ignore it
+					if ($(this).css('display') == "none") {
+						return;
+					}
+
+					// style the next element we find and break out of the each loop
+					if (found) {
+						$(this).addClass('hovered');
+						previous.removeClass('hovered');
+						return false;
+					}
+
+					// remove the hover effect from the current element
+					if ($(this).hasClass('hovered')) {
+						previous = $(this);
+						found = true;
+					}
+
+				});
+
+				break;
+
+			case 40: // down arrow key, selects the next visible element
+
+				// check if there are any styled elements already if not style the first
+				if (!$('#search-results ul li').hasClass('hovered')) {
+					$('#search-results ul li:visible:first').addClass('hovered');
+					return false;
+				}
+
+				var found = false; // variable to store if we've found the matching element
+				var previous; // variable to store the previous element so we cal remove it's styling
+
+				// loop through each element checking if there is already an element that has a hover effect
+				$('#search-results ul li').each(function() {
+
+					// if this element is hidden ignore it
+					if ($(this).css('display') == "none") {
+						return;
+					}
+
+					// style the next element we find and break out of the each loop
+					if (found) {
+						$(this).addClass('hovered');
+						previous.removeClass('hovered');
+						return false;
+					}
+
+					// remove the hover effect from the current element
+					if ($(this).hasClass('hovered')) {
+						previous = $(this);
+						found = true;
+					}
+
+				});
+
+				break;
+
+			default:
+				return false; // exit this handler for other keys
+		}
+		e.preventDefault(); // prevent the default action (scroll / move caret)
+	});
+</script>
+</li>
+<li class="wscarticon hidden-sm hidden-xs">
+<a href="https://www.buymobiles.net/basket"><i class="fal fa-shopping-basket fa-lg"></i> <em class="roundpoint"><span class="basket_items">0</span></em><span class="hidetxt"></span></a>
+</li>
+<li class="hidden-lg hidden-md" style="margin-bottom: -10px;"><br><br><br><br><a href="https://www.buymobiles.net/help/trackorder"><i class="fal fa-user" style="margin-right: 10px;"></i> Check My Order</a></li>
+<li class="hidden-lg hidden-md"><a href="https://www.buymobiles.net/help"><i class="fal fa-question-circle" style="margin-right: 10px;"></i> Help &amp; Support</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</header>
+
+<div class="container">
+
+    {{ content }}
+
+</div>
+
+<footer>
+<div class="footer">
+<div class="container">
+<div class="footer-links">
+<div class="col-md-5 hidden-xs text-center">
+<div class="about-us-signup">
+<h4>Receive our offers</h4>
+<form class="form-search" id="newsletter_signup_form">
+<input type="text" class="input-medium search-query about-us-signup-input" placeholder="Enter your email address…" name="email"><br>
+<label style="font-weight: 400; font-size:12px;"><input type="radio" name="opt-in" required="required" /> I want to receive mobile phone offers and weekly tech updates from Buymobiles.net.</label><br>
+<button type="submit" class="about-us-signup-btn" onclick="dataLayer.push({ 'event' : 'GAEvent', 'eventCategory' : 'Email Sign Up - Footer', 'eventAction' : 'Clicks', 'eventLabel' : 'undefined' });">Sign Up</button>
+</form>
+<div id="newsletter_signup_output">&nbsp;</div>
+</div>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-6">
+<h4>Mobile Phones</h4>
+<ul>
+<li><a href="https://www.buymobiles.net/upgrade" rel="nofollow">Upgrades</a></li>
+<li><a href="https://www.buymobiles.net/contract-mobile-phones" rel="nofollow">Best Selling</a></li>
+<li><a href="https://www.buymobiles.net/sim-free" rel="nofollow">SIM Free</a></li>
+<li><a href="https://www.buymobiles.net/mobile-phone-finance" rel="nofollow">Finance</a></li>
+<li><a href="https://www.buymobiles.net/coming-soon" rel="nofollow">Coming Soon</a></li>
+<li><a href="https://www.buymobiles.net/business-deals">Business</a></li>
+</ul>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-6">
+<h4>Online Help</h4>
+<ul>
+<li><a href="https://www.buymobiles.net/help/trackorder" rel="nofollow">Check Order</a></li>
+<li><a href="https://www.buymobiles.net/help/delivery" rel="nofollow">Delivery Info</a></li>
+<li><a href="https://www.buymobiles.net/help/returns" rel="nofollow">Returns</a></li>
+<li><a href="https://www.buymobiles.net/help/repairs" rel="nofollow">Repairs</a></li>
+<li><a href="https://www.buymobiles.net/help/networkchecks" rel="nofollow">Credit Checks</a></li>
+<li><a href="https://www.buymobiles.net/help" rel="nofollow">Other Help</a></li>
+</ul>
+</div>
+<div class="col-md-3 col-sm-4">
+<h4 class="hidden-xs">Useful Links</h4>
+<ul class="hidden-xs">
+<li><a href="https://blog.buymobiles.net/" target="_blank">Editorial</a></li>
+<li><a href="https://www.buymobiles.net/about-us">About Us</a></li>
+<li><a href="https://www.buymobiles.net/help/affiliates" rel="nofollow">Affiliates</a></li>
+<li><a href="https://www.a1comms.com/category/careers/" rel="nofollow" target="_blank">Careers</a></li>
+<li><a href="https://www.buymobiles.net/help/terms">Modern Slavery Statement</a></li>
+</ul>
+<div class="col-md-3 col-xs-4">
+<div class="icon-circle">
+<a href="https://www.facebook.com/BuyMobiles/" target="_blank" class="ifacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+</div>
+</div>
+<div class="col-md-3 col-xs-4">
+<div class="icon-circle">
+<a href="https://twitter.com/buymobiles" target="_blank" class="itwittter" title="Twitter"><i class="fab fa-twitter"></i></a>
+</div>
+</div>
+<div class="col-md-3 col-xs-4">
+<div class="icon-circle">
+<a href="https://www.instagram.com/buy_mobiles/" target="_blank" class="iinstagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="container">
+<div class="row">
+<div class="disclaimer-footer">
+<div class="col-lg-5 col-md-5 col-sm-6">
+<img src="https://www.buymobiles.net/assets/img/award-logo.png" alt="EE Best Partner - Buymobiles.net" />
+</div>
+<div class="col-lg-3 col-md-2 col-sm-3">
+<img src="https://www.buymobiles.net/assets/img/visa-and-mastercard-update.png" alt="Visa verified - Buymobiles.net" />
+</div>
+<div class="col-lg-4 col-md-4 col-sm-3">
+<div class="payments-footer">
+<img src="https://www.buymobiles.net/assets/img/payment-option.png" alt="Visa & Mastercard secure payment - Buymobiles.net" />
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<p class="copyright">Buymobiles.net is a trading style of A1 Comms Ltd who is registered in England (No. 04455131) at Contract House, Turnpike Business Park, Alfreton, DE55 7AD, is authorised and regulated by the Financial Conduct Authority (620040), and is acting as a credit intermediary and offering credit products provided only by Klarna Retail Finance. Credit is subject to status. &copy;2001 - 2020 Buymobiles.net</p>
+</div>
+</div>
+</div>
+<div class="back-to-top"><a href=""><i class="fal fa-arrow-up"></i></a></div>
+</footer>
+<div id="footer_alert_container"></div>
+<div class="black_overlay"></div>
+<script type="text/javascript" src="https://www.buymobiles.net/assets/js/jquery.bcSwipe.min.js?1583831181"></script>
+<script type="text/javascript" src="https://www.buymobiles.net/assets/js/jquery.cookie.min.js?1583831176"></script>
+<script type="text/javascript" src="https://www.buymobiles.net/assets/js/isotope.pkgd.min.js?1583831183"></script>
+<script type="text/javascript" src="https://www.buymobiles.net/assets/js/star-rating.min.js?1583831177"></script>
+<script type="text/javascript" src="https://www.buymobiles.net/assets/js/webslidemenu.min.js?1583831182"></script>
+<script type="text/javascript" src="https://www.buymobiles.net/assets/js/jquery.fancybox-updated.min.js?1583831172"></script>
+<script type="text/javascript" src="https://www.buymobiles.net/assets/js/global.min.js?1583831180"></script>
+</body>
 </html>
